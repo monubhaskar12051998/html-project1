@@ -68,7 +68,8 @@
     <hr />
     <br />
     <h2>The backtracking algorithm.</h2>
-    <pre>
+    
+    <pre style="color: blue;">
 boolean solve(Node n) {
     if n is a leaf node {
     if the leaf is a goal node,reurn true 
@@ -81,6 +82,7 @@ boolean solve(Node n) {
     }
 }
     </pre>
+  
     <br />
     <p>
       Notice that the algorithm is expressed as a function boolean.This is
@@ -102,7 +104,7 @@ boolean solve(Node n) {
       ia done by the lines
     </p>
     <br />
-    <pre>
+    <pre style="color: blue;" >
   for each child c of n {
     if solve(c) succeeds,return true
   }
@@ -119,13 +121,12 @@ boolean solve(Node n) {
     </p>
     <br />
 
-    <pre>
+    <pre style="color: blue;">
 if n is aleaf Node{
   if the leaf is a goal node,return true
   else return false
 }
-</pre
-    >
+</pre >
     <br />
 
     <p>
@@ -150,7 +151,7 @@ if n is aleaf Node{
       stack algorithm.In fact,that is how your recursive algorithms are
       translated into machine or assembly language.
     </p>
-    <pre>
+    <pre style="color: blue;">
 boolean solve(Node n) {
   put node n on the stack;
   while the stack is not empty{
@@ -194,7 +195,7 @@ boolean solve(Node n) {
       Here is arecursive backtracking algorithm,modified slightly to print(in
       reverse order) the nodes along the successfull path:
     </p>
-    <pre>
+    <pre style="color: blue;">
       boolean solve(Node n) {
         if n is a leaf node {
           if the leaf is agoal node {
@@ -264,7 +265,8 @@ boolean solve(Node n) {
         A binary tree is a data structure composed of nodes.one node is designated as the root node.Each node can be reference(point to)zero,one,or two other nodes,which are called its children.The children are reffered to as the left child and/or the right child.All nodes are reachable(by one or more steps) from the root node,and there are no cycles.For our purpose,although this is not part of the defination of a binary tree,we will say that a node might or might not be agoal node,and will contain its name.The first example in this paper(which we repeat here) shows a binary tree.<br/>
         <br/>
         Here's a defination of binaryTree class:<br/>
-        <pre>public class BinaryTree {
+      <pre style="color: blue;">
+        public class BinaryTree {
          BinaryTree leftchild = null;
           BinaryTree rightchild = null;
           boolean isGoalNode =false;
@@ -281,7 +283,7 @@ boolean solve(Node n) {
       <p>
         Next we will create a TreeSearch class,and in it we will define a method makeTree() which construct the above binary tree.
       </p><br/>
-      <pre>static BinaryTree makeTree() {
+      <pre style="color: blue;">static BinaryTree makeTree() {
         BinaryTree root,a,b,c,d,e,f;
         c = new BinaryTree("C",null,null,false);
         d= new BinaryTree("D",null,null,false);
@@ -294,13 +296,14 @@ return root;
       }
 </pre>
 <p>Here's a main programe to create a binary treeand try to solve it:</p>
-<pre>public static void main(String args[]) {
+<pre style="color: blue;">public static void main(String args[]) {
   BinaryTree tree = makeTree();
   System.out.println(Solvable(tree));
 }
 </pre>
 <p>And finally,here's the recursive backtracking routine to"solve" the binary tree by finding a goal node.</p>
-<pre>static boolean solvable(BinaryTree node) {
+<pre style="color: blue;">
+static boolean solvable(BinaryTree node) {
   /* 1 * / if (node.isGoalNode) return false;
   /* 2 * / if (node == null) return true;
   /* 3 * / if (solvable(node.leftchild) return true;
@@ -319,7 +322,8 @@ return root;
 <p>This programe runs correctly and produces the unenlightening result true.<br/>
 <br/>
 Each time we ask for another node,we have to check if it is null.In the above we put that check as the first thing is solvable.an alternative would be to check first whether each child exist,and recur only if they do.here's that alternative version: </p>
-<pre> ststic boolean solvable(BinaryTree node) {
+<pre style="color: blue;">
+   ststic boolean solvable(BinaryTree node) {
   if (node.isGoalNode) return true;
   if (node.leftchild !=null && solvable(node.leftchild)) return true;
   if (node.rightchild !=null && solvable(node.rightchild)) return true;
@@ -353,7 +357,8 @@ There are two ways to do this:
   <p>Used by both methods to find the next "country" (actually, the row and column of the next square on the checkboard).</p><br/>
   <br/>
 Here'sthe code for method 1:
-<pre>boolean explore1(int row,int column,int color) {
+<pre style="color: blue;">
+  boolean explore1(int row,int column,int color) {
   if (row >= Num_ROWS)return maplsOK();
   map[row][column] =color;
   for (int nextcolor = RED;nextcolor <= BLUE;nextcolor++) {
@@ -366,7 +371,8 @@ Here'sthe code for method 1:
 
 </P>And here's code for method 2
       </p><br>
-      <pre>boolean explore2(int row,int color,int column) {
+      <pre style="color: blue;">
+        boolean explore2(int row,int color,int column) {
         if(row >=Num_ROWS)return true;
         if(okToColor(row,column,color)) {
           map[row][column] =color;
@@ -417,7 +423,8 @@ Here'sthe code for method 1:
       <br>
       Here's our debugging code. For this trivial program, there's almost more debugging code than actual code, but in larger programs
 the proportions will be better.</p>
-<pre>static String indent = "";
+<pre style="color: blue;">
+  static String indent = "";
   static String name (BinaryTree node) {
   }
   if (node == null) return null;
@@ -440,7 +447,8 @@ System.out.println(indent + name(node) + " ) return false");
 retuen false;
 }</pre><br>
 <p>TO use this code, we modify solveable as follows:</p><br>
-<pre>static boolean solvable (BinaryTree node) {
+<pre style="color: blue;">
+  static boolean solvable (BinaryTree node) {
   enter(node);
   if (node == null) return no(node);
   if (node.isGoalNode) return yes(node);
@@ -448,7 +456,10 @@ retuen false;
   if (solvable (node.rightChild)) return yes(node);
    return no(node);
   }</pre><br>
-  <p>And we get these results:<br>
+
+  <p> And we get these results:</p><br>
+  <pre style="color: blue;"
+
  Entering solvable(Root)<br>
 | Entering solvable (A)<br>
 || Entering solvable(C)<br>
@@ -469,13 +480,14 @@ retuen false;
 ||solvable (E) returns true<br>
 |solvable(B) returns true<br>
  solvable (Root) returns true<br>
-true </p><br>
+true </pre><br>
 <h3>Trick #3:Never discard your debugging statements</h3>
 <p>Writing debugging statements is programming, too. Often it's as much work to debug the debugging statements as it is to debug the actual program. Once your program is working, why throw this code away?<br>
   Obviously, you don't want to print out all this debugging information from a program you are ready to submit (or to turn over to your manager). You could comment out your debugging calls, but that can be a lot of work. What's more, in the above example, you would have to replace every return(yes (node)) with return(true), and every return (no (node)) with return false. With all these changes, you might introduce new bugs into your program.<br>
   The simple solution is to make your debugging statements conditional. For example,
 </p><br>
-<pre>static final boolean debugging = false;<br><br>
+<pre style="color: blue;"
+>static final boolean debugging = false;<br><br>
   static void enter (BinaryTree node) {
   if (debugging) {
     System.out.println(indent + "Entering solvable(" + name(node) + ")");
@@ -500,11 +512,13 @@ static boolean yes(BinaryTree node) {
 <p>In industry, actual programs often have multiple flags to control different aspects of debugging. Don't worry too much about making your code larger; modern compilers will notice that since the variable debugging is final, it can never be true, and the controlled code will be discarded.</p><br>
 <h3>Trick #4: Create an Exception</h3>
 <p>If an Exception is thrown, you can get information about just where it happened by sending it the message printStackTrace(PrintStream). Since an Exception is an object like any other, you can create and throw your own Exceptions. However, Java programmers don't always realize that you can create an Exception without throwing it. For example, the following code</p><br>
-<pre>new Exception("Checkpoint Charlie").printstack(System.out);</pre><br>
+<pre style="color: blue;"
+>new Exception("Checkpoint Charlie").printstack(System.out);</pre><br>
 <p>will print out a message something like this, and the program will then continue normally. That is, the above code just acts like a print statement.
 </p><br>
 
-<pre></pre><br>
+<pre style="color: blue;"
+></pre><br>
 <h3>Example:Cindy's Puzzle</h3>
 <p>I call the following puzzle "Cindy's puzzle" for historical reasons. You have some number n of black marbles and the same number of white marbles, and you have a playing board which consists simply of a line of 2n+1 spaces to put the marbles in. Start with the black marbles all at one end (say, the left), the white marbles all at the other end, and a free space in between.</p><br>
 <center>
@@ -669,16 +683,17 @@ First, notice that if a marble has a move, that move is unique: if it can move a
 
 Next, notice that for a given board position, each marble occupies a unique space. Hence, instead of talking about moving a particular marble, we can talk about moving the marble in a particular space. If a move is possible from a given space, then that must be the only move possible from that space, because if the marble in that space has a move, it is unique. There is a slight complication because not every space contains a marble, but at least the spaces (unlike the marbles) stay in one place.<br><br>
 
-<b>Now we have a simpler ordering of moves to use in our program. Just check, in order, the 2n+1 spaces of the board. For each space, either zero or one moves is possible. With this understanding, we can write a boolean method canMove(int[] board, int position) which determines whether a move is possible from the given position:</b>
+<strong>Now we have a simpler ordering of moves to use in our program. Just check, in order, the 2n+1 spaces of the board. For each space, either zero or one moves is possible. With this understanding, we can write a boolean method canMove(int[] board, int position) which determines whether a move is possible from the given position:</strong>
 <ul>
 <li>If the position is empty, no move is possible;</li>
 <li>If the position contains a black marble, the method checks for a move or jump to the right;</li>
 <li>If the position contains a white marble, the method checks for a move or jump to the left.</li>
 </ul><br>
-We write another method<b> int[] makeMove(int[] oldBoard, int position)</b> that will take a board and a position, make a move from that position, and return as its value a new board. (We could write this somewhat more efficiently by changing the old board, rather than creating a new one, but here we are more concerned with simplicity.) In technical jargon, makeMove is "applicative" rather than "mutative."<br>
+We write another method<strong> int[] makeMove(int[] oldBoard, int position)</strong> that will take a board and a position, make a move from that position, and return as its value a new board. (We could write this somewhat more efficiently by changing the old board, rather than creating a new one, but here we are more concerned with simplicity.) In technical jargon, makeMove is "applicative" rather than "mutative."<br>
 
-Along with<b> canMove and makeMove,</b> we are using methods,<b> puzzleSolved and printBoard</b> with meanings that should be obvious.</p><br><br>
-<pre> boolean solvable(int[] board) {
+Along with<strong> canMove and makeMove,</strong> we are using methods,<strong> puzzleSolved and printBoard</strong> with meanings that should be obvious.</p><br><br>
+<pre style="color: blue;"
+> boolean solvable(int[] board) {
   if (puzzleSolved(board)) {
        return true;
    }
@@ -698,7 +713,9 @@ Along with<b> canMove and makeMove,</b> we are using methods,<b> puzzleSolved an
 <p>Along with canMove and makeMove, we are using methods puzzleSolved and printBoard with meanings that should be obvious.<br><br>
   Here is some output from the program:
 </p><br><br>
-<ol reversed>
+<pre>
+<ol
+reversed>
 <li><b>WHITE WHITE WHITE_____ BLACK BLACK</b></li>
 <li><b>WHITE WHITE WHITE BLACK_____ BLACK</b></li>
 <li><b>WHITE WHITE_____ BLACK WHITE BLACK</b></li>
@@ -716,6 +733,7 @@ Along with<b> canMove and makeMove,</b> we are using methods,<b> puzzleSolved an
 <li><b>WHITE WHITE WHITE_____ BLACK BLACK</b></li>
 <li><b>WHITE_____ WHITE WHITE BLACK BLACK</b></li>
 </ol>
+</pre>
 <p>Notice that the solution is given in reverse order: BLACK starts out on the left and WHITE on the right, as in the last line. I've added line numbers to the actual output in order to emphasize this point. Backtracking always produces its results (sequence of choices) in reverse order; it is up to you, the programmer, to reverse the results again to get them in the correct order</p>
 
 
