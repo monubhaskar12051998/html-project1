@@ -1,0 +1,155 @@
+
+body{
+    margin: 0px;
+    }
+    .header-wrapper{
+        background-color:white;
+       padding-left: 40px;
+       padding-top: 20px;
+       height: 60px;
+    }
+    .text-blue{
+        color: blue;
+        font-size: 30px;
+    }
+    .text-black{
+        font-size: 30px;
+    }
+    .new-task-button{
+        font-size: 20px;
+        margin-left: 90%;
+    
+    }
+    .task-list {
+       
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        margin: auto;
+    }
+    section{
+        background-color: rgb(222, 211, 211);
+    }
+    
+    
+    .card {
+        margin: 10px;
+        margin-top: 20px;
+        border: 1px solid black;
+        width: 250px;
+        height: 290px;
+        background-color:white ;
+    }.card-heading {
+        color: blue;
+        font-size: 15px;
+        padding-left: 10px;
+    }
+    .box1-mark{
+        color: gray;
+    }
+    
+    /* page2coding */
+    .blur-background{
+        filter: blur(5px);
+    }
+    .flex-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .popup-box{
+        width: 330px;
+        height: 180px;
+        border: 2px solid black;
+        border-radius: 4px;
+        background-color: white;
+    
+    }
+    .add-task{
+        text-decoration: none;
+        color: black;
+        padding-left: 10px;
+    }
+    .button-blue{
+        text-decoration: none;
+        color:white;
+        padding-left: 8px;  
+       
+    }
+    .button-page2{
+       border-radius: 7px;
+        background-color: blue;
+        margin-left:70%;
+        margin-top: 34px;
+    }
+    .learn-c {
+        background-color: rgb(229, 221, 221);
+        border: 0px;
+        height: 25px;
+    
+    }
+    .icon-cross{
+        margin-left: 150px;
+        }
+    a{
+        text-decoration: none;
+    }
+    .position-box{
+        position: absolute;
+        top:40%;
+        left:50%;
+        right: 50%;
+        bottom: 50%;
+    }
+    /* page3 start */
+    .body-page3body-page3{
+        margin: 0px;
+        padding: 0px;
+    }
+    .background-page-3{
+        background-color: rgb(241, 236, 236);
+       height: 680px;
+    }
+    .task-list-page3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+    .card-page3{
+       width: 250px;
+       height: 250px;
+       border-radius: 8px;
+       border:1px solid black;
+       margin-left: 50px;
+       margin-top:150px;
+    }
+     .task-page3{
+        position:absolute;
+       margin-left: 60px;
+       top: 190px;
+     }
+    
+    
+    .plus-icon-page3{
+        margin-left: 60px;
+    }
+    
+    /* page4 coding */
+    .add-new-page1{
+        text-decoration: none;
+        color: black;
+    }
+    .add-new-page2{
+        text-decoration: none;
+        color: black;
+        margin-left: 110px;
+    }
+    
+    @media screen and (min-width:320px)and (max-width:580px){
+        .new-task-button{
+            margin-left:30%;
+        }
+    }
+        
+    
