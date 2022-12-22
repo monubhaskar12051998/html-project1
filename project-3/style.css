@@ -52,11 +52,14 @@ body{
     .blur-background{
         filter: blur(5px);
     }
+    
+    
     .flex-box{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        
     }
     .popup-box{
         width: 330px;
@@ -65,6 +68,7 @@ body{
         border-radius: 4px;
         background-color: white;
     
+           
     }
     .add-task{
         text-decoration: none;
@@ -80,28 +84,31 @@ body{
     .button-page2{
        border-radius: 7px;
         background-color: blue;
-        margin-left:70%;
+        margin-left:230px;
         margin-top: 34px;
     }
+    
     .learn-c {
-        background-color: rgb(229, 221, 221);
+        background-color: rgb(223, 25, 25);
         border: 0px;
         height: 25px;
+        width: 328px;
     
     }
+    .position-box{
+        position: absolute;
+        top:320px;
+        left: 500px;
+    }
+    
     .icon-cross{
         margin-left: 150px;
         }
     a{
         text-decoration: none;
     }
-    .position-box{
-        position: absolute;
-        top:40%;
-        left:50%;
-        right: 50%;
-        bottom: 50%;
-    }
+    
+    
     /* page3 start */
     .body-page3body-page3{
         margin: 0px;
@@ -150,6 +157,12 @@ body{
         .new-task-button{
             margin-left:30%;
         }
+        .position-box{
+            position: absolute;
+            top:250px;
+            left:20px;
+        }
+        
     }
         
     
