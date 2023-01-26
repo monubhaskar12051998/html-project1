@@ -1,0 +1,324 @@
+.body{
+    height:100vh;
+    background-color: #3d087b;
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+
+}
+
+.clock-logo {
+    
+    width: 185px;
+    height: 80px;
+    margin-top: 50px;
+    margin-left: 200px;
+  }
+
+  .schedule {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    border: 1px solid #ededed;
+    border: 1px solid var(--unnamed-color-ededed);
+    height:270px;
+    width:450px;
+    margin-left: 200px;
+    margin-top: 40px;
+  }
+
+  .morninglogo{
+    margin-left: 10px;
+   
+  }
+
+  .lunchlogo{
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .naplogo{
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .nightlogo{
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+
+
+
+  .morninglabel{
+    color:#5f0089; 
+    font-size:large;
+    margin-left: 50px;
+    margin-top: -20px;
+
+
+  }
+
+  #selectmorning{
+    color:#5f0089; 
+    margin-left: 50px;
+    height: 30px;
+    width: 150px;
+
+  }
+
+  .lunchlabel{
+    color:#5f0089; 
+    font-size:large;
+    margin-left: 50px;
+    margin-top: -20px;
+}
+
+  #selectafternoon{
+    color:#5f0089; 
+    margin-left: 70px;
+    height: 30px;
+    width: 150px;
+ }
+
+  .naplabel{
+    color:#5f0089; 
+    font-size:large;
+    margin-left: 50px;
+    margin-top: -20px;
+}
+
+  #selectevening{
+    color:#5f0089; 
+    margin-left: 90px;
+    height: 30px;
+    width: 150px;
+}
+.nightlabel{
+    color:#5f0089; 
+    font-size:large;
+    margin-left: 50px;
+   
+}
+
+  #selectnight{
+    color:#5f0089; 
+    margin-left: 70px;
+    height: 30px;
+    width: 150px;
+
+  }
+
+
+  
+  .morninggreetings {
+   line-height: 90px;
+    text-align:center;
+    align-items: center;
+     width:530px;
+    height:100px;
+    background: #6a419a 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    margin-left: 200px;
+    margin-top: 20px;
+  }
+
+  .greetingsmessage{
+    font-size: 20px;
+    font-weight: 800;
+
+  }
+
+  /* buttton */
+  #btn {
+    
+    width: 230px;
+    height: 60px;
+    background: transparent
+      linear-gradient(113deg, #6e54ec 0%, #cb52f8 40%, #fc5eff 81%, #f1a7c5 100%)
+      0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    margin-left: 200px;
+    margin-top: 20px;
+  }
+
+  #btn span {
+    width: 111px;
+    height: 60px;
+     color: var(--white-color-ffffff);
+    text-align: left;
+    font: normal 20px Manrope;
+    color: #ffffff;
+    opacity: 1;
+    overflow: hidden; 
+  }
+
+  .scheduleitems {
+   
+    width: 250px;
+    height: 150px;
+   
+    background: #6a419a 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    margin-left: 450px;
+    margin-top: -50px;
+  }
+
+  .scheduleitems span {
+     font: normal  15px Manrope;
+    letter-spacing: 1px;
+    color: #f25cfe;
+    opacity: 1;
+  }
+
+  .space{
+    margin-left: 8px;
+    margin-top: 4px;
+  }
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+  /* container2 */
+
+.part2{
+    position: absolute;
+    left: 750px;
+    top: 180px;
+}
+
+.timercontainer {
+    
+    position: relative;
+  }
+  
+  
+/** Greetings */
+
+.greetings {
+    
+    width: 600px;
+    height: 100px;
+    border: 1px salmon;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    text-align: left;
+    align-items: center;
+    opacity: 1;
+    margin-left: 0.2rem;
+    margin-top: 20px;
+    padding: 0 2.2rem;
+    box-sizing: border-box;
+  }
+  
+  .greetings__message {
+    color: var(--purple-light-color-8e53f0);
+    font: normal normal bolder 30px Baumans;
+    letter-spacing: 0px;
+    color: #8e53f0;
+    align-items: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px #bda3e9;
+    opacity: 1;
+  }
+  
+
+
+.greeting-photo {
+    margin-top: 40px;
+    width: 495px;
+    height: 310px;
+  }
+
+  /* timeclock */
+.top{
+    z-index: 2;
+    width: 550px;
+    height:120px;
+    position: relative;
+    top:-90px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 8px;
+  }
+  .timelabel{
+    margin-left:20px;
+    margin-top: 35px;
+    font-size:x-large;
+    color:#6a419a;
+  }
+  .one{
+    position: absolute;
+    left:110px;
+    top:35px;
+    font-size:x-large;
+    color: #3c2760;
+  }
+  .two{
+    position: absolute;
+    left:190px;
+    top:35px;
+    font-size:x-large;
+    color: #3b2365;
+
+  }
+  .three{
+    position: absolute;
+    left:260px;
+    top:35px;
+    font-size:x-large;
+    color: #402275;
+  
+  }
+  .timerdots{
+    margin-left: 20px;
+  }
+  
+  .timerperiod{
+    margin-left: 390px;
+    margin-top:-28px;
+    font-size:x-large;
+    color: #201435;
+
+  
+  }
+  
+  .timersecondarybox-1{
+    position: absolute;
+    top:-8px;
+    left:30px;
+  
+    width: 500px;
+    height:60px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    
+    z-index:1;
+    opacity: 0.52;
+  
+  }
+  .timersecondarybox-2{
+    position: absolute;
+    top:10px;
+    left:30px;
+    width: 500px;
+    height:60px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    z-index:0;
+    opacity: 0.22;
+  
+  }
+
+  .btn {
+    
+    width: 25rem;
+    height: 45px;
+    background: transparent
+      linear-gradient(113deg, #6e54ec 0%, #cb52f8 40%, #fc5eff 81%, #f1a7c5 100%)
+      0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+  }
+  
+  
