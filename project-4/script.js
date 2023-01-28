@@ -9,11 +9,11 @@ function ClockStart(){
     if(hours>12){
         hours=hours-12;
         let am=document.getElementById("clockperiod");
-        clockperiod.innerText="AM";
+        clockperiod.innerText="PM";
     }
     else{
         let am=document.getElementById("clockperiod");
-        clockperiod.innerText="PM";   
+        clockperiod.innerText="AM";   
     }
 
     let clockhours=document.getElementById("clockhours");
@@ -61,34 +61,38 @@ let dateHello = new Date();
 let hours = dateHello.getHours();
 let quotes1 = document.getElementById("greetingtext");
 let quotes2 = document.getElementById("greeting-message");
-let changebackground = document.getElementById("photo");
+let changebackground = document.getElementById("images");
 
 if(8<=hours<=11 )
 {
     quotes1.innerText = "GOOD MORNING!! WAKE UP !!";
     quotes2.innerText = "GRAB SOME HEALTHY BREAKFAST!!!";
-    changebackground="big.jpg";
+    changebackground.innerHTML="<img src='./images/big.jpg'>";
+
 }
 if(12<=hours<=15)
 {
     quotes1.innerText = "GOOD AFTERNOON !! TAKE SOME SLEEP";
     quotes2.innerText = "LET'S HAVE SOME LUNCH !!";
-    changebackground="lunch.jpg";
+    changebackground.innerHTML="<img src='./images/lunch.jpg'>";
 
 }
 if(16<=hours<=17 )
 {rsNow==19
     quotes1.innerText = "GOOD EVENING !!";
     quotes2.innerText = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
-    changebackground="evening.png";
+    changebackground.innerHTML="<img src='./images/evening.png'>";
+
 
 }
 if(20<=hrsNow<=7)
 {
     quotes1.innerText = "GOOD NIGHT !!";
     quotes2.innerText = "CLOSE YOUR EYES AND GO TO SLEEP";
-    changebackgroundObject.src="goodnight.jpg"
+    changebackground.innerHTML="<img src='./images/goodnight.jpg'>";
+
 
 }
+
 
 
