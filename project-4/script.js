@@ -77,8 +77,8 @@ if(12<=hours<=15)
     changebackground.innerHTML="<img src='./images/lunch.jpg'>";
 
 }
-if(16<=hours<=17 )
-{rsNow==19
+if(16<=hours<=19 )
+{
     quotes1.innerText = "GOOD EVENING !!";
     quotes2.innerText = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
     changebackground.innerHTML="<img src='./images/evening.png'>";
