@@ -85,7 +85,7 @@ if(16<=hours<=19 )
 
 
 }
-if(20<=hrsNow<=7)
+if(20<=hours<=7)
 {
     quotes1.innerText = "GOOD NIGHT !!";
     quotes2.innerText = "CLOSE YOUR EYES AND GO TO SLEEP";
