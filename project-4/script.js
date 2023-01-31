@@ -1,3 +1,4 @@
+
 function ClockStart(){
     let date=new Date();
     let hours=date.getHours();
@@ -52,47 +53,41 @@ btn.addEventListener("click",function(event){
     naptime.innerText = selectevening.value ;
     sleeptime.innerText = selectnight.value ;
 
-
+    let dateCopy = new Date();
+    let hours = dateCopy.getHours();
+    let quotes1 = document.getElementById("greetingtext");
+    let quotes2 = document.getElementById("greeting-message");
+    let changebackground = document.getElementById("images");
+    
+    if(hours==8 || hours==9 || hours==10 || hours==11 )
+    {
+        quotes1.innerText = "GOOD MORNING!! WAKE UP !!";
+        quotes2.innerText = "GRAB SOME HEALTHY BREAKFAST!!!";
+        changebackground.innerHTML="<img src='./images/big.jpg'>";
+    
+    }
+    if(hours==12 || hours==13 || hours==14 || hours==15)
+    {
+        quotes1.innerText = "GOOD AFTERNOON !!";
+        quotes2.innerText = "LET'S HAVE SOME LUNCH !!";
+        changebackground.innerHTML="<img src='./images/lunch.jpg'>";
+    
+    }
+    if(hours==16 || hours==17 || hours==18 || hours==19)
+    {
+        quotes1.innerText = "GOOD EVENING !!";
+        quotes2.innerText = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
+        changebackground.innerHTML="<img src='./images/evening.png'>";
+    
+    }
+    if(hours>=20 || hours<=7)
+    {
+        quotes1.innerText = "GOOD NIGHT !!";
+        quotes2.innerText = "CLOSE YOUR EYES AND GO TO SLEEP";
+        changebackground.innerHTML="<img src='./images/goodnight.jpg'>";
+     
+    }
+    
 
 
 })
-
-let dateHello = new Date();
-let hours = dateHello.getHours();
-let quotes1 = document.getElementById("greetingtext");
-let quotes2 = document.getElementById("greeting-message");
-let changebackground = document.getElementById("images");
-
-if(8<=hours<=11 )
-{
-    quotes1.innerText = "GOOD MORNING!! WAKE UP !!";
-    quotes2.innerText = "GRAB SOME HEALTHY BREAKFAST!!!";
-    changebackground.innerHTML="<img src='./images/big.jpg'>";
-
-}
-if(12<=hours<=15)
-{
-    quotes1.innerText = "GOOD AFTERNOON !! TAKE SOME SLEEP";
-    quotes2.innerText = "LET'S HAVE SOME LUNCH !!";
-    changebackground.innerHTML="<img src='./images/lunch.jpg'>";
-
-}
-if(16<=hours<=19 )
-{
-    quotes1.innerText = "GOOD EVENING !!";
-    quotes2.innerText = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
-    changebackground.innerHTML="<img src='./images/evening.png'>";
-
-
-}
-if(20<=hours<=7)
-{
-    quotes1.innerText = "GOOD NIGHT !!";
-    quotes2.innerText = "CLOSE YOUR EYES AND GO TO SLEEP";
-    changebackground.innerHTML="<img src='./images/goodnight.jpg'>";
-
-
-}
-
-
-
