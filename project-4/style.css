@@ -6,6 +6,9 @@
     opacity: 1;
 
 }
+.onecontainer{
+  position: relative;
+}
 
 .clock-logo {
     
@@ -178,6 +181,46 @@
 /* ------------------------------------------------------------------------------------------------------------------------------------------ */
   /* container2 */
 
+  .bgimage1{
+    position: absolute;
+    left: 850px;
+    top:108px;
+    z-index:4;
+    opacity: 0.50;
+  }
+
+
+  .bgimage2{
+    position: absolute;
+    left: 980px;
+    top:108px;
+    z-index:4;
+    opacity: 0.50;
+  }
+
+  .bgimage3{
+    position: absolute;
+    left: 1100px;
+    top:108px;
+    z-index:4;
+    opacity: 0.50;
+  }
+
+.bgimage4{
+  position: absolute;
+  left: 1210px;
+  top:108px;
+  z-index:4;
+  opacity: 0.50;
+}
+
+
+
+
+
+
+
+
 .part2{
     position: absolute;
     left: 750px;
@@ -190,7 +233,7 @@
   }
   
   
-/** Greetings */
+
 
 .greetings {
     
@@ -251,11 +294,24 @@
     left:110px;
     top:35px;
     font-size:x-large;
-    color: #3c2760;
+    color:black;
+    z-index: 3;
+    
   }
+
+.timercount{
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+}
+
+.timerunit{
+  margin-left: 10px;
+}
+
   .two{
     position: absolute;
-    left:190px;
+    left:230px;
     top:35px;
     font-size:x-large;
     color: #3b2365;
@@ -263,22 +319,22 @@
   }
   .three{
     position: absolute;
-    left:260px;
+    left:350px;
     top:35px;
     font-size:x-large;
     color: #402275;
   
   }
   .timerdots{
-    margin-left: 20px;
+    margin-left: 50px;
   }
   
   .timerperiod{
-    margin-left: 390px;
+    margin-left: 490px;
     margin-top:-28px;
     font-size:x-large;
-    color: #201435;
-
+    color: black;
+    z-index:10;
   
   }
   

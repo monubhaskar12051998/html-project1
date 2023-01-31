@@ -76,7 +76,7 @@ btn.addEventListener("click",function(event){
     if(hours==16 || hours==17 || hours==18 || hours==19)
     {
         quotes1.innerText = "GOOD EVENING !!";
-        quotes2.innerText = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
+        quotes2.innerText = "STOP YAWNING, GET SOME TEA, ITS JUST EVENING!";
         changebackground.innerHTML="<img src='./images/evening.png'>";
     
     }
